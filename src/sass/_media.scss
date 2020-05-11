@@ -1,0 +1,92 @@
+@media (max-width: 575px) {
+    .promo {
+        min-height: 550px;
+        padding: 19px 15px 50px;
+        &__header {
+            font-size: 23px;
+            margin-bottom: 0;
+        }
+        &__subheader {
+            font-size: 12px;
+        }
+        &__wrapper {
+            margin-top: 68px;
+        }
+        &__icons {
+            width: 100%;
+            margin-top: 50px;
+        }
+        &__icon {
+            font-size: 12px;
+            img {
+                width: 35%;
+            }
+        }
+        &__link {
+            font-size: 12px;
+        }
+    }
+    .header {
+        &__official {
+            display: none;
+        }
+        &__phone {
+            height: 35px;
+        }
+        &__logo {
+            width: 50%;
+        }
+    }
+    .button{
+        &_first {
+            display: none;
+        }
+        &_main {
+            width: 200px;
+            height: 35px;
+            font-size: 11px;
+        }
+    }
+    .advantages {
+        padding: 23px 5px 20px;
+        &__header {
+            font-size: 17px;
+        }
+        &__subheader {
+            font-size: 10px;
+            margin-bottom: 15px;
+        }
+        &__descr {
+            font-size: 11px;
+        }
+        &__items {
+            margin-top: 50px;
+        }
+        &__item {
+            img {
+                margin-bottom: 16px;
+                width: 36%;
+            }
+        }
+    }
+    .consultation {
+        padding: 58px 10px;
+        &__header {
+            font-size: 17px;
+        }
+        &__subheader {
+            font-size: 12px;
+            margin-top: 55px;
+        }
+        &__input {
+            width: 230px;
+            height: 30px;
+        }
+        button {
+            width: 230px;
+            height: 30px;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+    }
+}
