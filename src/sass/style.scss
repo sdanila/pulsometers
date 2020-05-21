@@ -1,8 +1,11 @@
 @import 'base/variables';
+@import 'base/mixins';
+
 * {
     font-family: 'Museo Sans Cyril', sans-serif;
 }
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
 }
@@ -14,3 +17,7 @@
 @import 'media';
 @import 'titles';
 @import 'forms';
+@import 'carousel';
+@import 'catalog';
+
+
