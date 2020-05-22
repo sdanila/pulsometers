@@ -1,0 +1,36 @@
+.feed {
+    padding-bottom: 71px;
+    &__items {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        hr {
+            width: 940px;
+            height: 1px;
+            background-color: #f6f6f6;
+            margin: 50px 0;
+            border: none;
+        }
+    }
+    &__item {
+        min-width: 886px;
+        span {
+            color: #646464;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    &__img {
+        display: flex;
+    }
+    &__name {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
