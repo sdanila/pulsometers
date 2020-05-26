@@ -14,15 +14,16 @@
     }
     &__item {
         min-width: 886px;
+        
         span {
             color: #646464;
             font-size: 14px;
             font-weight: 300;
         }
     }
-    &__img {
-        display: flex;
-    }
+    // &__img {
+        // display: block;
+    // }
     &__name {
         color: #0d0d0d;
         font-size: 18px;
