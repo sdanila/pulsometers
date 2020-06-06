@@ -1,5 +1,6 @@
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/animation';
 
 * {
     font-family: 'Museo Sans Cyril', sans-serif;
@@ -9,6 +10,7 @@
     max-width: 950px;
     margin: 0 auto;
 }
+
 @import 'header';
 @import 'promo';
 @import 'buttons';
@@ -22,5 +24,6 @@
 @import 'feed';
 @import 'footer';
 @import 'modal';
+@import 'pageup';
 
 

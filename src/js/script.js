@@ -1,4 +1,5 @@
-var slider = tns({
+
+const slider = tns({
     container: '.carousel__inner',
     items: 1,
     controls: false,
@@ -54,4 +55,53 @@ $(document).ready(function(){
       $('.overlay, #order').fadeIn('slow');
     })
   })
-});
+
+  function valideForm(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: 'required',
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+          name: {
+            required: "Пожалуйста, введите своё имя",
+            minlength: jQuery.validator.format("Минимальное количество символов: {0}!")
+          },
+      
+        phone: 'Пожалуйста, введите свой номер телефона',
+        email: {
+          required: 'Пожалуйста, введите свою почту',
+          email: 'Неправильно введен почтовый адрес'
+        }
+      }
+    });
+  }
+
+  valideForm('#consultation-form');
+  valideForm('#consultation form');
+  valideForm('#order form');
+
+  $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn('slow');
+    } else {
+      $('.pageup').fadeOut('fast');
+    }
+  })
+
+  $("a[href^='#']").click(function() {
+    const _href = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(_href).offset().top+'px'});
+    return false
+  });
+})

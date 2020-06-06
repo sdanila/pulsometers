@@ -11,7 +11,7 @@
     <title>Pulsometers</title>
 </head>
 <body>
-    <section class="promo">
+    <section id='up' class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -58,20 +58,20 @@
             <h2 class="title">наши преимущества</h2>
             <div class="advantages__items">
                 <div class="advantages__item">
-                    <img src="icons/cup.png" alt="cup">
+                    <img src="icons/cup.png" alt="cup" class="advantages__icon">
                     <div class="advantages__subheader">Делимся опытом</div>
                     <div class="advantages__descr">Наши сотрудники всегда готовы <br> поделиться своим опытом, <br> 
                         так как сами бегают полумарафоны, <br> переплыли Босфор, готовятся к <br> соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/heart.png" alt="heart">
+                    <img src="icons/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subheader">Заботимся о здоровье</div>
                     <div class="advantages__descr">Мы работаем для того, <br>
                         чтобы Ваши занятия спортом шли на <br> пользу Вашему здоровью и были в <br> радость Вам и Вашим близким!
                         </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/shoe.png" alt="shoe">
+                    <img src="icons/shoe.png" alt="shoe" class="advantages__icon">
                     <div class="advantages__subheader">Учим бегать</div>
                     <div class="advantages__descr">Помогаем с обучением <br>
                         правильной технике бега! <br> 
@@ -87,10 +87,10 @@
                 по подбору пульсометра</h2>
             <div class="consultation__descr">Просто заполните форму заявки <br>
                 и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя" >
-                <input name="phone" required type="number" placeholder="Ваш телефон" >
-                <input name="email" required type="email" placeholder="Ваш E-mail" >
+            <form id='consultation-form' class="feed-form" action="#">
+                <input name="name" type="text" placeholder="Ваше имя" >
+                <input name="phone" placeholder="Ваш телефон" >
+                <input name="email" type="email" placeholder="Ваш E-mail" >
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -175,7 +175,7 @@
                             <div class="catalog-item__old-price">6 990 руб.</div>
                             <div class="catalog-item__price">6 641 руб.</div>
                         </div>
-                        <button class="button button_mini">купить</button>
+                            <button class="button button_mini">купить</button>
                     </div>
                 </div>
                 <div class="catalog-item">
@@ -378,41 +378,45 @@
 
     <section class="feed">
         <div class="container">
-            <h2 class="title">отзывы клиентов</h2>
-            <div class="feed__items">
-                <div class="feed__item">
-                    <img src="img/irina.png" alt="irina" class="feed__img">
+            <h2 class="title title_mb70">отзывы клиентов</h2>
+            <div class="feed__item">
+                <img src="img/irina.png" alt="irina" class="feed__img">
+                <div class="feed__text">
                     <div class="feed__name">Ирина Иванченко</div>
                     <span>2 полумарафона</span>
                     <div class="feed_descr">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.
-                        Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
-                        
-                        Новые цели - новый гаджет!
-                        
-                        Спасибо, RunSmart! 
+                    Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
+                    <br><br>    
+                    Новые цели - новый гаджет!
+                    <br><br>
+                    Спасибо, RunSmart! 
                     </div>
                 </div>
-                <hr>
-                <div class="feed__item">
-                    <img src="img/ivan.png" alt="ivan" class="feed__img">
+            </div>
+            <hr>
+            <div class="feed__item">
+                <img src="img/ivan.png" alt="ivan" class="feed__img">
+                <div class="feed__text">
                     <div class="feed__name">Иван Сёмочкин</div>
                     <span>1 полумарафон</span>
-                    <div class="feed_descr">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. 
-                        Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
-                        
-                        С ними подготовился к своему первому полумарафону! Спасибо!!!
+                    <div class="feed_descr">Крутая штука-пульсометр. Обычно без них бегал. Оказывается  только  хуже себе делал. 
+                    Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первуютренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии,составили план тренировок на месяц вперёд.
+                    <br><br>
+                    С ними подготовился к своему первому полумарафону! Спасибо!!!
                     </div>
                 </div>
-                <hr>
-                <div class="feed__item">
-                    <img src="img/yulia.png" alt="yulia" class="feed__img">
+            </div>
+            <hr>
+            <div class="feed__item">
+                <img src="img/yulia.png" alt="yulia" class="feed__img">
+                <div class="feed__text">
                     <div class="feed__name">Юлия Дашкина</div>
                     <span>2 полумарафона</span>
-                    <div class="feed_descr">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
-
-                        Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
-                         
-                        Спасибо!!!
+                    <div class="feed_descr">Долго не могла начать бегать, т.к. до этого несколько раз    начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с  контролем пульса и решила попробовать.
+                    <br><br>
+                    Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
+                    <br><br>
+                    Спасибо!!!
                     </div>
                 </div>
             </div>
@@ -432,15 +436,16 @@
         </div>
     </footer>
 
+
     <div class="overlay">
         <div class="modal" id='consultation'>
             <div href="#" class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя" >
-                <input name="phone" required type="number" placeholder="Ваш телефон" >
-                <input name="email" required type="email" placeholder="Ваш E-mail" >
+                <input name="name" type="text" placeholder="Ваше имя" >
+                <input name="phone" placeholder="Ваш телефон" >
+                <input name="email" type="email" placeholder="Ваш E-mail" >
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>     
         </div>
@@ -450,9 +455,9 @@
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя" >
-                <input name="phone" required type="number" placeholder="Ваш телефон" >
-                <input name="email" required type="email" placeholder="Ваш E-mail" >
+                <input name="name" type="text" placeholder="Ваше имя" >
+                <input name="phone" placeholder="Ваш телефон" >
+                <input name="email" type="email" placeholder="Ваш E-mail" >
                 <button class="button button_submit">купить</button>
             </form>     
         </div>
@@ -464,12 +469,18 @@
         </div>
     </div>
 
+    
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <!-- <script src="js/slick.min.js"></script> -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
