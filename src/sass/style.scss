@@ -7,23 +7,23 @@
 }
 .container {
     position: relative;
-    max-width: 950px;
+    width: 940px;
     margin: 0 auto;
 }
 
-@import 'header';
-@import 'promo';
-@import 'buttons';
-@import 'advantages';
-@import 'consultation';
-@import 'media';
-@import 'titles';
-@import 'forms';
-@import 'carousel';
-@import 'catalog';
-@import 'feed';
-@import 'footer';
-@import 'modal';
-@import 'pageup';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/media';
+@import 'blocks/titles';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/feed';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';
 
 
