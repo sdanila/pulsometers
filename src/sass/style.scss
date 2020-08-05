@@ -7,8 +7,9 @@
 }
 .container {
     position: relative;
-    width: 940px;
+    width: 960px;
     margin: 0 auto;
+    padding: 0;
 }
 
 @import 'blocks/header';
@@ -16,7 +17,6 @@
 @import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'blocks/consultation';
-@import 'blocks/media';
 @import 'blocks/titles';
 @import 'blocks/forms';
 @import 'blocks/carousel';
@@ -25,5 +25,6 @@
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/pageup';
+@import 'blocks/media';
 
 
