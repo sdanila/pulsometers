@@ -468,4 +468,30 @@
         right: 6px;
     }
 
+    .modal {
+        width: 66%;
+        min-height: 334px;
+        padding: 15px 30px 35px;
+        &__close {
+            top: 7px;
+            right: 5px;
+        }
+    }
+
+    .feed-form {
+        width: 100%;
+        margin-top: 20px;
+        input {
+            height: 40px;
+            width: 100%;
+            padding: 0;
+            padding-left: 10px;
+        }
+    }
+    
+    .button_submit {
+        height: 45px;
+        font-size: 13px;
+        padding: 0 4px;
+    }
 }
